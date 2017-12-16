@@ -1,0 +1,19 @@
+# Headers
+regexp=(?:\s{2}|^)(NAME|READY|STATUS|RESTARTS|AGE)(?:\s|$)
+colours=default,underline
+======
+# get pods
+regexp=(.+)-(\d*)-(.\w+)
+colours=cyan
+======
+# running 
+regexp=(Running)
+colours=green
+======
+# restarts
+regexp=(\dd)
+colours=blue
+======
+# ready
+regexp=(\d)/(\d)
+colours=yellow
